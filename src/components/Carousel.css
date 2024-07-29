@@ -1,0 +1,92 @@
+.carousel-item {
+    height: 100%;
+    position: relative;
+}
+
+.carousel-inner {
+    height: 80vh; /* Adjust height of the carousel to fit within the viewport */
+}
+
+.carousel-caption.d-none.d-md-block {
+    left: 50%;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 5.414L12.586 10 8 14.586 9.414 16 15.414 10 9.414 4 8 5.414z' fill='%23004d00'/%3E%3C/svg%3E");
+    background-color: transparent; /* Ensure no background color interferes */
+    background-repeat: no-repeat; /* Ensure the icon does not repeat */
+    background-size: 5rem; /* Adjust size if needed */
+    width: 150px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 19.586L11.414 15 16 10.414 14.586 9 8.586 15 14.586 21 16 19.586z' fill='%23004d00'/%3E%3C/svg%3E");
+    background-color: transparent; /* Ensure no background color interferes */
+    background-repeat: no-repeat; /* Ensure the icon does not repeat */
+    background-size: 5rem; /* Adjust size if needed */
+    width: 150px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+}
+
+.carousel-caption {
+    bottom: 10%; /* Position the caption slightly above the bottom */
+    left: 50%; /* Center the caption horizontally */
+    transform: translateX(-50%); /* Adjust positioning to keep it centered */
+    text-align: center; /* Center the text */
+    color: #fff; /* Ensure text color is white for readability */
+    padding: 1rem; /* Add padding for better spacing */
+    background: rgba(0, 0, 0, 0.5); /* Darken background for better text visibility */
+    border-radius: 8px; /* Rounded corners for the caption background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    max-width: 90%; /* Limit the width of the caption */
+    width: auto; /* Ensure it is responsive */
+}
+
+.input-group {
+    display: flex; /* Use flex to center the input group */
+    justify-content: center; /* Center the input group horizontally */
+    margin: 0 auto; /* Center the input group horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adjust shadow for better visibility */
+    max-width: 600px; /* Limit the width of the input group */
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly opaque white background */
+    border-radius: 4px; /* Rounded corners for input */
+    color: #333; /* Dark text color for readability */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Add a border for better contrast */
+}
+
+.btn-success {
+    border-radius: 4px; /* Rounded corners for button */
+    padding: 0.5rem 1rem; /* Add padding to make the button more compact */
+    font-size: 1rem; /* Adjust font size */
+    background-color: #28a745; /* Ensure the button has a green background */
+    border: none; /* Remove the default border */
+}
+
+.btn-success i {
+    margin-right: 0; /* Remove margin from the icon inside the button */
+}
+
+@media (max-width: 576px) {
+    .carousel-inner {
+        height: 50vh; /* Adjust height for small screens */
+    }
+
+    .carousel-caption {
+        max-width: 100%; /* Make caption full width on small screens */
+        padding: 0.5rem; /* Adjust padding for small screens */
+        font-size: 0.9rem; /* Adjust font size for better readability on small screens */
+    }
+
+    .input-group {
+        max-width: 90%; /* Make input group full width on small screens */
+    }
+
+    .btn-success {
+        font-size: 0.9rem; /* Adjust font size for the button */
+        padding: 0.4rem 0.8rem; /* Adjust padding for small screens */
+    }
+}

@@ -1,0 +1,92 @@
+/* Navbar Styles */
+nav.navbar.navbar-expand-lg.navbar-dark {
+    position: absolute;
+}
+
+.navbar {
+    padding: 1.5rem 2rem; /* Increase padding */
+    background-color: transparent; /* Semi-transparent background */
+    font-size: 2rem; /* Increase overall font size */
+    position: absolute; /* Position navbar above the carousel */
+    top: 0; /* Align navbar to the top of the carousel */
+    left: 0; /* Align navbar to the left of the carousel */
+    width: 100%; /* Full width */
+    z-index: 800; /* Ensure navbar is above carousel content */
+}
+
+span {
+    font-size: 3rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-family: 'Georgia', serif;
+    font-size: 5rem; /* Large but not excessively so */
+    color: #094d1cbb !important; /* Ensure color is white for better contrast */
+    text-shadow: 2px 2px 4px rgb(162, 162, 162); /* Add subtle text shadow */
+    padding: 0.5rem 1rem; /* Add padding for better spacing */
+}
+
+.navbar-brand i {
+    font-size: 2rem; /* Ensure the icon size complements the text */
+    margin-left: 0.5rem; /* Add space between text and icon */
+}
+
+.nav-link {
+    color: #165f1eec !important; /* Default link color */
+    margin-right: 1.5rem; /* Add more space between links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    font-size: 1.5rem; /* Increase link font size */
+    display: flex;
+    align-items: center; /* Vertically center items */
+}
+
+.nav-link i {
+    margin-right: 0.5rem; /* Adjust spacing between icon and text */
+    font-size: 1.75rem; /* Increase icon size */
+}
+
+.nav-link:hover {
+    color: #28a745 !important; /* Green color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.navbar-toggler {
+    
+    padding: 0.25rem /* Remove the default border */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 25px;
+    height: 25px;
+    border: 10rem;
+}
+
+/* Custom Styles for Cart Icon */
+.cart-icon {
+    color: #165f1eec; /* Default color for cart icon */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.cart-icon:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+/* Badge Styles */
+.position-relative .badge {
+    background-color: #dc3545; /* Default red color for badge */
+    transition: background-color 0.3s ease; /* Smooth transition for badge */
+}
+
+/* Cart Icon becomes yellow when more than one item is in the cart */
+.navbar-nav .nav-link .fa-shopping-cart.cart-yellow {
+    color: #ffc107; /* Yellow color when there are more than one item */
+}
+.custom-badge {
+    background-color: #102415; /* Example: Deep Sky Blue */
+    color: #fff; /* Text color */
+}
