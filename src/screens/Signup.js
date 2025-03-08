@@ -24,23 +24,24 @@ export default function Signup() {
         },
         body: JSON.stringify(credentials),
       });
-      if (response.ok) {
-        const data = await response.json();
-        console.log('User created successfully:', data);
-        //setMessage('User created successfully! Redirecting to login page...');
-        // Redirect to the login page
-        setTimeout(() => {
-            window.location.href = '/login';
-        }, 2000); // Redirect after 2 seconds
-    }
-    
-      else {
-        console.error('Failed to create user');
-        // Handle error
+  
+      const data = await response.json();
+  
+      if (!response.ok) {
+        // Handle validation errors or other errors
+        console.error('Error:', data.errors || data.error);
+        alert(data.errors ? data.errors.map(err => err.msg).join('\n') : data.error);
+        return;
       }
+  
+      console.log('User created successfully:', data);
+      alert('User created successfully! Redirecting to login page...');
+      setTimeout(() => {
+        window.location.href = '/login';
+      }, 2000);
     } catch (error) {
       console.error('Error creating user:', error);
-      // Handle error
+      alert('An unexpected error occurred. Please try again.');
     }
   };
 
