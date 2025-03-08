@@ -55,7 +55,7 @@ export default function Signup() {
                   <h2 className='display-5 fw-bold text-center'>Sign up</h2>
                   <p className='text-center m-0'>
                     Already have an account?{' '}
-                    <Link to='/signin' className='link-primary text-decoration-none'>
+                    <Link to='/login' className='link-primary text-decoration-none'>
                       Sign in
                     </Link>
                   </p>
